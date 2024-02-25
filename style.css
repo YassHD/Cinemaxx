@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+ 
+body {
+  background-image: url('images/fond.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow-y: hidden;
+ 
+}
+ 
+.halo {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  height: 55vh;
+  border-radius: 10px;
+  transform: translateY(-12%);
+}
+ 
+.halo::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  z-index: -1;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.2), 0 0 40px 20px rgba(255, 255, 255, 0.2), 0 0 60px 30px rgba(255, 255, 255, 0.2);
+}
+.vintage__container {
+  display: inline-block;
+  margin: 50px auto 40px;
+}
+ 
+.vintage {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 130px;
+  letter-spacing: 10px;
+  z-index: 1;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  transform: translateY(25%);
+}
+ 
+.vintage__top {
+  background: linear-gradient(rgb(240, 220, 200), rgb(230, 200, 160));
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  z-index: 2;
+  -webkit-text-fill-color: transparent; 
+
+
+}
+ 
+.vintage__bot {
+  text-shadow:
+    2px 1px rgb(85, 10, 0),
+    4px 2px rgb(90, 15, 5),
+    6px 4px rgb(100, 20, 15),
+    8px 5px rgb(105, 25, 20),
+    10px 6px rgb(110, 30, 25),
+    12px 7px rgb(115, 30, 30),
+    14px 8px rgb(120, 30, 35),
+    16px 9px black,
+    18px 10px black,
+    20px 11px black,
+    22px 12px black;
+    
+    
+}
+ 
+  .connexion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto; /* Centrer horizontalement */
+}
+ 
+.connexion .black-square {
+  width: 500px; /* Augmentez la largeur du carré noir ici */
+  height: 100%; /* Vous pouvez ajuster la hauteur si nécessaire */
+}
+ 
+.connexion label {
+    display: block; /* Les labels s'affichent sur des lignes séparées */
+    font-weight: bold;
+    margin-top: 10px;
+}
+ 
+.connexion input[type="text"],
+.connexion input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 18px;
+    box-shadow:-7px -3px 10px #e9e9e9,
+    7px 3px 10px #dfdfdf;
+ 
+}
+ 
+.connexion input[type="submit"] {
+    background-color: white; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: black;
+    transition: background-color 0.3s; /* Transition de couleur au survol */
+    box-shadow:-7px -3px 10px #e9e9e9,
+    7px 3px 10px #bababa;
+    margin-top: 10px;
+}
+ 
+.connexion input[type="submit"]:hover {
+    background-color: rgb(105, 25, 20);
+    color: white;/* Couleur de fond au survol */
+}
+ 
+/* Style pour le lien "Mot de passe oublié" ou d'autres liens */
+.connexion a {
+    text-decoration: none;
+    color: black; /* Couleur du lien */
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+ 
+.connexion a:hover {
+    text-decoration: underline;
+}
+ 
+.nomUtilisateur::placeholder{
+  text-align: center;
+ 
+}
+ 
+.motDePasse::placeholder{
+  text-align: center;
+}
+ 
+.nomUtilisateur{
+  text-align: center;
+}
+ 
+.motDePasse{
+  text-align: center;
+}

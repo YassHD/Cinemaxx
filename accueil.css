@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/Pixel\ Pursuit\ Poster.png");
+  background-size: cover;
+}
+
+.film-posters {
+  display: flex;
+  overflow: hidden;
+}
+
+.film-poster {
+  flex: 0 0 33.33%;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out, order 0.3s ease-in-out;
+}
+.film-posters.transition {
+  transition: transform 0.3s ease-in-out;
+}
+.film-poster img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.3);
+  max-height: 500px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.arrow {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background-color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  background-color: #555;
+}
+
+#arrowLeft {
+  left: 0;
+  margin-right: 10px; 
+}
+
+#arrowRight {
+  right: 0;
+  margin-left: 10px; 
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  margin-top: auto;
+}
+
+.column1 {
+  flex: 35%;
+  padding: 10px;
+  height: 650px; 
+  margin-left: 20px;
+}
+
+.column2 {
+  flex: 65%;
+  padding: 10px;
+  height: 650px; 
+}
+
+h1, h2, h3 {
+  font-family: 'Koulen', sans-serif;
+  color: white;
+}
+
+h3 {
+  margin-top: 2%;
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  margin-top: 2%;
+  font-size: 150px; 
+  line-height: 0.9;
+  transform: scale(1, 1.1);
+}
+
+.hrcolumn1 {
+  width: 5%;
+  border: 2px solid white;
+}
+
+.divjouer {
+  text-align: left; 
+  margin-top: 30px; 
+}
+
+.buttonjouer {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 25px;
+}
